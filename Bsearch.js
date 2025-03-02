@@ -186,6 +186,12 @@ async function siparisVer(eczaneListesi) {
 }
 
 
+// urun kismi: [{ productID: "cerave_1367", quantity: 10 }, { productID: "bioderma_1109", quantity: 5 }] seklinde girilecek
 
+//eger sorun cikiyorsa DB icerisinde cekmeye calistigimiz veri yoktur, su an db de cok az veri var. Onun disinda cok kez denedim
+//herhangi bir kritik hata yakalayamadim
+//time complexity yuksek, optimize edilmedi.
+
+//TEST
 kaydetSiparisBilgileri("34", "kadikoy", "fenerbahce", [{ productID: "parol_500", quantity: 1 }]);
 eczaneStoklariKontrolEt();
